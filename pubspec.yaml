@@ -1,7 +1,7 @@
-name: volume_watcher
+name: volume_watcher_plus
 description: Support ios and android real-time return system volume value, maximum volume, initial volume, support set volume.
 version: 2.0.1
-homepage: https://github.com/yangming1009/volume_watcher
+homepage: https://github.com/yangming1009/volume_watcher_plus
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

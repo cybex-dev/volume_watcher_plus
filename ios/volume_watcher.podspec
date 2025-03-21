@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint volume_watcher.podspec` to validate before publishing.
+# Run `pod lib lint volume_watcher_plus.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'volume_watcher'
+  s.name             = 'volume_watcher_plus'
   s.version          = '0.0.1'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC

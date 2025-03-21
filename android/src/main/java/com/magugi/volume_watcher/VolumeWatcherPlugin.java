@@ -1,4 +1,4 @@
-package com.magugi.volume_watcher;
+package com.magugi.volume_watcher_plus;
 
 import android.content.Context;
 
@@ -22,7 +22,7 @@ public class VolumeWatcherPlugin implements FlutterPlugin, StreamHandler, Method
     private EventChannel.EventSink eventSink;
     private MethodChannel methodChannel;
     private EventChannel eventChannel;
-    private static final String CHANNEL = "volume_watcher";
+    private static final String CHANNEL = "volume_watcher_plus";
 
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {

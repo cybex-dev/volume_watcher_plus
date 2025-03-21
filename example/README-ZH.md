@@ -1,6 +1,6 @@
 Language: [English](README.md) | [中文简体](README-ZH.md)
 
-# volume_watcher
+# volume_watcher_plus
 ```
 支持ios 与 android 以下功能：
   1.实时监听返回系统音量值的改变，并返回音量值。 
@@ -30,7 +30,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:volume_watcher/volume_watcher.dart';
+import 'package:volume_watcher_plus/volume_watcher_plus.dart';
 
 void main() {
   runApp(MyApp());

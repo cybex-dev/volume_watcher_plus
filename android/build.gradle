@@ -1,4 +1,4 @@
-group 'com.magugi.volume_watcher'
+group 'com.magugi.volume_watcher_plus'
 version '1.0'
 
 buildscript {

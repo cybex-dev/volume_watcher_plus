@@ -15,11 +15,11 @@
     VolumeWatcherPlugin *instance = [VolumeWatcherPlugin pluginWithVolumeView: [[MPVolumeView alloc] init]];
     
     // Method handling
-    FlutterMethodChannel* methodChannel = [FlutterMethodChannel methodChannelWithName:@"volume_watcher_method"
+    FlutterMethodChannel* methodChannel = [FlutterMethodChannel methodChannelWithName:@"volume_watcher_plus_method"
                                                                       binaryMessenger:[registrar messenger]];
     [registrar addMethodCallDelegate:instance channel:methodChannel];
     // Event handling
-    FlutterEventChannel* eventChannel = [FlutterEventChannel eventChannelWithName:@"volume_watcher_event"
+    FlutterEventChannel* eventChannel = [FlutterEventChannel eventChannelWithName:@"volume_watcher_plus_event"
                                                                   binaryMessenger:[registrar messenger]];
     [eventChannel setStreamHandler:instance];
 }

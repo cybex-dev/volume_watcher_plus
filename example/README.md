@@ -1,11 +1,11 @@
 Language: [English](README.md) | [中文简体](README-ZH.md)
 
-# volume_watcher
+# volume_watcher_plus
 * Support ios and android real-time return system volume value, maximum volume, initial volume, support set volume.
 
 ## Getting Started
 dependencies:
-  volume_watcher: ^1.3.0
+  volume_watcher_plus: ^1.3.0
 
 ## Support Methods
 ```
@@ -32,7 +32,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:volume_watcher/volume_watcher.dart';
+import 'package:volume_watcher_plus/volume_watcher_plus.dart';
 
 void main() {
   runApp(MyApp());

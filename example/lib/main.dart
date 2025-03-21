@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:volume_watcher_plus/volume_watcher_plus.dart';
 import 'package:flutter/services.dart';
-import 'package:volume_watcher/volume_watcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,8 +31,8 @@ class _MyAppState extends State<MyApp> {
 
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      VolumeWatcher.hideVolumeView = true;
-      platformVersion = await VolumeWatcher.platformVersion;
+      VolumeWatcherPlus.hideVolumeView = true;
+      platformVersion = await VolumeWatcherPlus.platformVersion;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -40,8 +40,8 @@ class _MyAppState extends State<MyApp> {
     double initVolume = 0;
     double maxVolume = 0;
     try {
-      initVolume = await VolumeWatcher.getCurrentVolume;
-      maxVolume = await VolumeWatcher.getMaxVolume;
+      initVolume = await VolumeWatcherPlus.getCurrentVolume;
+      maxVolume = await VolumeWatcherPlus.getMaxVolume;
     } on PlatformException {
       platformVersion = 'Failed to get volume.';
     }
@@ -69,7 +69,7 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              VolumeWatcher(
+              VolumeWatcherPlus(
                 onVolumeChangeListener: (double volume) {
                   setState(() {
                     currentVolume = volume;
@@ -82,13 +82,13 @@ class _MyAppState extends State<MyApp> {
               Text("Current Volume=$currentVolume"),
               ElevatedButton(
                 onPressed: () {
-                  VolumeWatcher.setVolume(maxVolume * 0.5);
+                  VolumeWatcherPlus.setVolume(maxVolume * 0.5);
                 },
                 child: Text("Set the volume to: ${maxVolume * 0.5}"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  VolumeWatcher.setVolume(maxVolume * 0.0);
+                  VolumeWatcherPlus.setVolume(maxVolume * 0.0);
                 },
                 child: Text("Set the volume to: ${maxVolume * 0.0}"),
               )

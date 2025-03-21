@@ -5,20 +5,20 @@ import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class VolumeWatcher extends StatefulWidget {
+class VolumeWatcherPlus extends StatefulWidget {
   final Function(double) onVolumeChangeListener;
   final Widget? child;
 
-  VolumeWatcher({
+  VolumeWatcherPlus({
     Key? key,
     required this.onVolumeChangeListener,
     this.child,
   }) : super(key: key);
 
   static const MethodChannel methodChannel =
-      const MethodChannel('volume_watcher_method');
+      const MethodChannel('volume_watcher_plus_method');
   static const EventChannel eventChannel =
-      const EventChannel('volume_watcher_event');
+      const EventChannel('volume_watcher_plus_event');
   static StreamSubscription? _subscription;
   static Map<int, Function> _events = {};
 
@@ -115,18 +115,18 @@ class VolumeWatcher extends StatefulWidget {
   }
 }
 
-class VolumeState extends State<VolumeWatcher> {
+class VolumeState extends State<VolumeWatcherPlus> {
   int? _listenerId;
 
   @override
   void initState() {
     super.initState();
-    _listenerId = VolumeWatcher.addListener(widget.onVolumeChangeListener);
+    _listenerId = VolumeWatcherPlus.addListener(widget.onVolumeChangeListener);
   }
 
   @override
   void dispose() {
-    VolumeWatcher.removeListener(_listenerId!);
+    VolumeWatcherPlus.removeListener(_listenerId!);
     super.dispose();
   }
 

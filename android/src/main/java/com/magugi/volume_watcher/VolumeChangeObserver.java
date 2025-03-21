@@ -1,4 +1,4 @@
-package com.magugi.volume_watcher;
+package com.magugi.volume_watcher_plus;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,7 +13,7 @@ import java.lang.ref.WeakReference;
  * System volume monitoring
  */
 public class VolumeChangeObserver {
-    public final static String TAG = "volume_watcher";
+    public final static String TAG = "volume_watcher_plus";
     private static final String VOLUME_CHANGED_ACTION = "android.media.VOLUME_CHANGED_ACTION";
     private static final String EXTRA_VOLUME_STREAM_TYPE = "android.media.EXTRA_VOLUME_STREAM_TYPE";
 

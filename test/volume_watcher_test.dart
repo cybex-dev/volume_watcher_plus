@@ -1,9 +1,9 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:volume_watcher/volume_watcher.dart';
+import 'package:volume_watcher_plus/volume_watcher_plus.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('volume_watcher');
+  const MethodChannel channel = MethodChannel('volume_watcher_plus');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await VolumeWatcher.platformVersion, '42');
+    expect(await VolumeWatcherPlus.platformVersion, '42');
   });
 }

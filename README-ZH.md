@@ -1,12 +1,12 @@
 Language: [English](README.md) | [中文简体](README-ZH.md)
 
-# volume_watcher
+# volume_watcher_plus
 * 支持iOS和Android实时返回系统音量值，最大音量，初始音量，支持集卷。
 
 ## 入门
 ```
 dependencies:
-  volume_watcher: ^1.3.0
+  volume_watcher_plus: ^1.3.0
 ```
 
 ## 对外提供如下方法：
@@ -45,7 +45,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:volume_watcher/volume_watcher.dart';
+import 'package:volume_watcher_plus/volume_watcher_plus.dart';
 
 void main() {
   runApp(MyApp());
