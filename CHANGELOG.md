@@ -49,3 +49,9 @@
 
 ## 2.0.1
 * Update CHANGELOG.md
+
+## 2.1.0
+* Update Package to support Flutter SDK >=2.18.0 <4.0.0
+* Update Android Gralde 8 support with AGP 8.5.2 & Compile SDK 35
+* Change Package Name to `volume_watcher_plus`
+* Update CHANGELOG.md
