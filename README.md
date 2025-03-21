@@ -8,7 +8,7 @@ Original maintainer [@salmanjones](https://github.com/salmanjones/volume_watcher
 ## Getting Started
 ```
 dependencies:
-  volume_watcher_plus: ^1.3.0
+  volume_watcher_plus: ^2.1.0
 ```
 
 ## Support Methods
