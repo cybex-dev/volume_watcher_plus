@@ -55,3 +55,7 @@
 * Update Android Gralde 8 support with AGP 8.5.2 & Compile SDK 35
 * Change Package Name to `volume_watcher_plus`
 * Update CHANGELOG.md
+
+## 2.1.1
+* Fix: podspec name issue
+* Update CHANGELOG.md
