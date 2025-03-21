@@ -1,5 +1,7 @@
 Language: [English](README.md) | [中文简体](README-ZH.md)
 
+Original maintainer [@salmanjones](https://github.com/salmanjones/volume_watcher) appears to have abandoned the project. This fork is to keep the project alive and updated under the name [volume_watcher_plus](https://pub.dev/packages/volume_watcher_plus). 
+
 # volume_watcher_plus
 * Support ios and android real-time return system volume value, maximum volume, initial volume, support set volume.
 
