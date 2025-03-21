@@ -59,3 +59,6 @@
 ## 2.1.1
 * Fix: podspec name issue
 * Update CHANGELOG.md
+
+## 2.1.2
+* Update gitignore
