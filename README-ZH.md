@@ -6,7 +6,7 @@ Language: [English](README.md) | [中文简体](README-ZH.md)
 ## 入门
 ```
 dependencies:
-  volume_watcher_plus: ^1.3.0
+  volume_watcher_plus: ^2.1.3
 ```
 
 ## 对外提供如下方法：
