@@ -62,3 +62,7 @@
 
 ## 2.1.2
 * Update gitignore
+
+## 2.1.3
+* Fix(android): Fix gradle tools version, now uses 8.5.2
+* Update example
