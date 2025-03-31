@@ -18,7 +18,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.magugi.volume_watcher
+        package: com.magugi.volume_watcher_plus
         pluginClass: VolumeWatcherPlugin
       ios:
         pluginClass: VolumeWatcherPlugin
